@@ -121,6 +121,14 @@ class XArray implements \Countable, \IteratorAggregate, \ArrayAccess {
 		return new self(a::requireValues($this->value, $keys));
 	}
 
+	public function first() {
+		return a::first($this->value);
+	}
+
+	public function last() {
+		return a::last($this->value);
+	}
+
 	public function append($value) {
 		a::append($this->value, $value);
 		return $this;

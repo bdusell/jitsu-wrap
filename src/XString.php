@@ -35,6 +35,10 @@ class XString {
 		return s::size($this->value);
 	}
 
+	public function isEmpty() {
+		return s::isEmpty($this->value);
+	}
+
 	public function equal($that) {
 		return s::equal($this->value, self::unwrap($that));
 	}
@@ -101,6 +105,10 @@ class XString {
 
 	public function ucwords() {
 		return new self(s::ucwords($this->value));
+	}
+
+	public function capitalize() {
+		return new self(s::capitalize($this->value));
 	}
 
 	public function capitalizeWords() {
