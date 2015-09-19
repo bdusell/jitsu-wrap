@@ -1,34 +1,25 @@
 {
   "name": "jitsu/wrap",
-  "description": "Wrapper classes providing chainable string and array methods",
-  "repositories": [
-    {
-      "type": "vcs",
-      "url": "../jitsu-util"
-    },
-    {
-      "type": "vcs",
-      "url": "../jitsu-array"
-    },
-    {
-      "type": "vcs",
-      "url": "../jitsu-string"
-    },
-    {
-      "type": "vcs",
-      "url": "../jitsu-regex"
-    }
+  "description": "Wrapper classes for strings, arrays, and regexes with chainable methods",
+  "keywords": [
+    "wrapper",
+    "chaining",
+    "string",
+    "array",
+    "regex",
+    "preg",
+    "utility"
   ],
-  "minimum-stability": "dev",
   "autoload": {
     "psr-4": {
       "Jitsu\\": "src/"
     }
   },
   "require": {
-    "jitsu/util": "dev-master",
-    "jitsu/string": "dev-master",
-    "jitsu/array": "dev-master",
-    "jitsu/regex": "dev-master"
+    "php": ">=5.3.0",
+    "jitsu/util": "^0.1.0",
+    "jitsu/string": "^0.1.0",
+    "jitsu/array": "^0.1.0",
+    "jitsu/regex": "^0.1.0"
   }
 }

@@ -4,15 +4,24 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "450770c690c7d183aa8e07c9674d84bd",
+    "hash": "6405d94660a68fa803ca1a699e7fd642",
     "packages": [
         {
             "name": "jitsu/array",
-            "version": "dev-master",
+            "version": "0.1.0",
             "source": {
                 "type": "git",
-                "url": "../jitsu-array",
-                "reference": "916f3991894678abb9c995f6abf21ddd106a3829"
+                "url": "https://github.com/bdusell/jitsu-array.git",
+                "reference": "864ce9b83b3222c297b2f1c6fc8c87b5093ef7a2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/bdusell/jitsu-array/zipball/864ce9b83b3222c297b2f1c6fc8c87b5093ef7a2",
+                "reference": "864ce9b83b3222c297b2f1c6fc8c87b5093ef7a2",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
             },
             "require-dev": {
                 "phpunit/phpunit": "^4.8"
@@ -23,42 +32,7 @@
                     "Jitsu\\": "src/"
                 }
             },
-            "description": "Array utilities.",
-            "time": "2015-08-20 09:23:24"
-        },
-        {
-            "name": "jitsu/regex",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "../jitsu-regex",
-                "reference": "ba5a9a38dbd91f1aded01c756c29a7a11f43d8c4"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Jitsu\\": "src/"
-                }
-            },
-            "time": "2015-08-20 16:56:58"
-        },
-        {
-            "name": "jitsu/string",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "../jitsu-string",
-                "reference": "89608040b3e248d6b518fc86d63f89317e10f910"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "^4.8"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Jitsu\\": "src/"
-                }
-            },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -69,20 +43,29 @@
                     "role": "Developer"
                 }
             ],
-            "description": "PHP's missing string library",
+            "description": "Normalized API for PHP's array functions",
             "keywords": [
-                "string",
+                "array",
                 "utility"
             ],
-            "time": "2015-08-20 08:49:26"
+            "time": "2015-09-19 00:28:51"
         },
         {
-            "name": "jitsu/util",
-            "version": "dev-master",
+            "name": "jitsu/regex",
+            "version": "0.1.0",
             "source": {
                 "type": "git",
-                "url": "../jitsu-util",
-                "reference": "dd15fe39c889fbac1665bc121a858eb69fb99b14"
+                "url": "https://github.com/bdusell/jitsu-regex.git",
+                "reference": "2b3a2678e7664359999b1ef5197401d559bc516b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/bdusell/jitsu-regex/zipball/2b3a2678e7664359999b1ef5197401d559bc516b",
+                "reference": "2b3a2678e7664359999b1ef5197401d559bc516b",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
             },
             "type": "library",
             "autoload": {
@@ -90,20 +73,121 @@
                     "Jitsu\\": "src/"
                 }
             },
-            "time": "2015-08-20 09:03:36"
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Brian DuSell",
+                    "email": "bdusell@gmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Normalized API for PHP's regular expression functions",
+            "keywords": [
+                "preg",
+                "regex"
+            ],
+            "time": "2015-09-19 02:03:46"
+        },
+        {
+            "name": "jitsu/string",
+            "version": "0.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/bdusell/jitsu-string.git",
+                "reference": "e5bb2aa3dd22e8248dbccc5df0f3708e532a4e11"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/bdusell/jitsu-string/zipball/e5bb2aa3dd22e8248dbccc5df0f3708e532a4e11",
+                "reference": "e5bb2aa3dd22e8248dbccc5df0f3708e532a4e11",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^4.8"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Jitsu\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Brian DuSell",
+                    "email": "bdusell@gmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Normalized API for PHP's string functions",
+            "keywords": [
+                "string",
+                "utility"
+            ],
+            "time": "2015-09-18 07:27:49"
+        },
+        {
+            "name": "jitsu/util",
+            "version": "0.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/bdusell/jitsu-util.git",
+                "reference": "45558dc120e185f45a160298cd47781dbe90150a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/bdusell/jitsu-util/zipball/45558dc120e185f45a160298cd47781dbe90150a",
+                "reference": "45558dc120e185f45a160298cd47781dbe90150a",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Jitsu\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Brian DuSell",
+                    "email": "bdusell@gmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "General-purpose utilities for PHP",
+            "keywords": [
+                "introspection",
+                "lazy",
+                "reflection",
+                "singleton",
+                "utility"
+            ],
+            "time": "2015-09-19 01:40:08"
         }
     ],
     "packages-dev": [],
     "aliases": [],
-    "minimum-stability": "dev",
-    "stability-flags": {
-        "jitsu/util": 20,
-        "jitsu/string": 20,
-        "jitsu/array": 20,
-        "jitsu/regex": 20
-    },
+    "minimum-stability": "stable",
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
-    "platform": [],
+    "platform": {
+        "php": ">=5.3.0"
+    },
     "platform-dev": []
 }
