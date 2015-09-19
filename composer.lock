@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "6405d94660a68fa803ca1a699e7fd642",
+    "hash": "3b6d25cba4e79760b8c5b0fd22091e64",
     "packages": [
         {
             "name": "jitsu/array",
