@@ -69,7 +69,7 @@ class XArray implements \Countable, \IteratorAggregate, \ArrayAccess {
 	}
 
 	public function join($str = '') {
-		return new XString(s::join(s::unwrap($str), $this->value));
+		return new XString(s::join(XString::unwrap($str), $this->value));
 	}
 
 	public function size() {
@@ -85,23 +85,23 @@ class XArray implements \Countable, \IteratorAggregate, \ArrayAccess {
 	}
 
 	public function get($key, $default = null) {
-		return a::get($this->value, s::unwrap($key), $default);
+		return a::get($this->value, XString::unwrap($key), $default);
 	}
 
 	public function getRef($key, $default = null) {
-		return a::getRef($this->value, s::unwrap($key), $default);
+		return a::getRef($this->value, XString::unwrap($key), $default);
 	}
 
 	public function hasKey($key) {
-		return a::hasKey($this->value, s::unwrap($key));
+		return a::hasKey($this->value, XString::unwrap($key));
 	}
 
 	public static function normalizeKey($k) {
-		return a::normalizeKey(s::unwrap($k));
+		return a::normalizeKey(XString::unwrap($k));
 	}
 
 	public function remove($key) {
-		a::remove($this->value, s::unwrap($key));
+		a::remove($this->value, XString::unwrap($key));
 		return $this;
 	}
 
@@ -234,7 +234,7 @@ class XArray implements \Countable, \IteratorAggregate, \ArrayAccess {
 	}
 
 	public function pad($value, $n) {
-		return new self(a::pad($value, $n));
+		return new self(a::pad($this->value, $value, $n));
 	}
 
 	public function pluck($key) {
@@ -333,32 +333,32 @@ class XArray implements \Countable, \IteratorAggregate, \ArrayAccess {
 
 	public function hasOnlyKeys($keys, &$unexpected = null) {
 		if(func_num_args() > 1) {
-			$r = a::hasOnlyKeys(self::unwrap($keys), $unexpected);
+			$r = a::hasOnlyKeys($this->value, self::unwrap($keys), $unexpected);
 			$unexpected = new self($unexpected);
 			return $r;
 		} else {
-			return a::hasOnlyKeys(self::unwrap($keys));
+			return a::hasOnlyKeys($this->value, self::unwrap($keys));
 		}
 	}
 
 	public function hasKeys($keys, &$missing = null) {
 		if(func_num_args() > 1) {
-			$r = a::hasKeys(self::unwrap($keys), $missing);
+			$r = a::hasKeys($this->value, self::unwrap($keys), $missing);
 			$missing = new self($missing);
 			return $r;
 		} else {
-			return a::hasKeys(self::unwrap($keys));
+			return a::hasKeys($this->value, self::unwrap($keys));
 		}
 	}
 
 	public function hasExactKeys($keys, &$unexpected = null, &$missing = null) {
 		if(func_num_args() > 1) {
-			$r = a::hasExactKeys(self::unwrap($keys), $unexpected, $missing);
+			$r = a::hasExactKeys($this->value, self::unwrap($keys), $unexpected, $missing);
 			$unexpected = new self($unexpected);
 			$missing = new self($missing);
 			return $r;
 		} else {
-			return a::hasExactKeys(self::unwrap($keys));
+			return a::hasExactKeys($this->value, self::unwrap($keys));
 		}
 	}
 

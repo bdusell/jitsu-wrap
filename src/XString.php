@@ -56,11 +56,11 @@ class XString {
 	}
 
 	public function split($delim = null, $limit = null) {
-		return new XArray(s::split(self::unwrap($delim), $limit));
+		return new XArray(s::split($this->value, self::unwrap($delim), $limit));
 	}
 
 	public function tokenize($chars) {
-		return new XArray(s::tokenize(self::unwrap($chars)));
+		return new XArray(s::tokenize($this->value, self::unwrap($chars)));
 	}
 
 	public function join($strs = null) {
