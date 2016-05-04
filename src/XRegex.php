@@ -6,6 +6,8 @@ use Jitsu\RegexUtil as r;
 
 /**
  * An object-oriented wrapper for PHP's PCRE patterns.
+ *
+ * See [jitsu/regex](https://github.com/bdusell/jitsu-regex).
  */
 class XRegex {
 
@@ -26,6 +28,12 @@ class XRegex {
 	 */
 	public $offsets;
 
+	/**
+	 * @param string|\Jitsu\XString $arg
+	 * @param string|\Jitsu\XString $flags
+	 * @param string|\Jitsu\XString|null $start
+	 * @param string|\Jitsu\XString|null $start
+	 */
 	public function __construct($arg, $flags = '', $start = null, $end = null) {
 		$this->pattern = (
 			$arg instanceof self ?

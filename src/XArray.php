@@ -11,6 +11,8 @@ use Jitsu\StringUtil as s;
 
 /**
  * An object-oriented wrapper class for the `array` type.
+ *
+ * See [jitsu/array](https://github.com/bdusell/jitsu-array).
  */
 class XArray implements \Countable, \IteratorAggregate, \ArrayAccess {
 
@@ -20,7 +22,7 @@ class XArray implements \Countable, \IteratorAggregate, \ArrayAccess {
 	public $value;
 
 	/**
-	 * @param $value array|self
+	 * @param array|self $value
 	 */
 	public function __construct($value = array()) {
 		$this->value = $value instanceof self ? $value->value : $value;

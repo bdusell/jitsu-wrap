@@ -6,11 +6,19 @@ use Jitsu\StringUtil as s;
 
 /**
  * An object-oriented wrapper for the `string` type.
+ *
+ * See [jitsu/string](https://github.com/bdusell/jitsu-string).
  */
 class XString {
 
+	/**
+	 * @var string The underlying string.
+	 */
 	public $value;
 
+	/**
+	 * @param string|self $value
+	 */
 	public function __construct($value = '') {
 		$this->value = $value instanceof self ? $value->value : $value;
 	}

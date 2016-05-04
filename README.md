@@ -1,14 +1,32 @@
-Jitsu Wrapper Classes
----------------------
+jitsu/wrap
+----------
 
 This package includes object-oriented wrapper classes for PHP strings, arrays,
 and regular expressions (respectively, `Jitsu\XString`, `Jitsu\XArray`, and
 `Jitsu\XRegex`). These classes simply build upon the functions in the packages
-`jitsu/string`, `jitsu/array`, and `jitsu/regex`, providing an
+[`jitsu/string`](https://github.com/bdusell/jitsu-string),
+[`jitsu/array`](https://github.com/bdusell/jitsu-array), and
+[`jitsu/regex`](https://github.com/bdusell/jitsu-regex), providing an
 object-oriented interface to the static methods implemented there. The OOP
 versions automatically unwrap their arguments and wrap their return values.
 
-Here's a quick example to illustrate their tremendous usefulness:
+This package is part of [Jitsu](https://github.com/bdusell/jitsu).
+
+## Installation
+
+Install this package with [Composer](https://getcomposer.org/):
+
+```sh
+composer require jitsu/wrap
+```
+
+## Namespace
+
+All classes are defined under the namespace `Jitsu`.
+
+## Usage
+
+Here's a quick example to illustrate this package's tremendous usefulness:
 
 ```php
 use Jitsu\XArray;
@@ -23,3 +41,6 @@ echo $s->split()->map(function($s) {
 })->join(' '), "\n";
 // => Super Secret Message
 ```
+
+## API
+
