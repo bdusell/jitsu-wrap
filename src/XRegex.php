@@ -29,10 +29,15 @@ class XRegex {
 	public $offsets;
 
 	/**
-	 * @param string|\Jitsu\XString $arg
-	 * @param string|\Jitsu\XString $flags
-	 * @param string|\Jitsu\XString|null $start
-	 * @param string|\Jitsu\XString|null $start
+	 * @param string|\Jitsu\XString|self $arg Either a PCRE pattern or
+	 *        another `XRegex`.
+	 * @param string|\Jitsu\XString $flags PCRE flags such as `i`, etc.
+	 * @param string|\Jitsu\XString|null $start Optional starting delimiter
+	 *        for the escaped PCRE pattern stored in `pattern`. This might
+	 *        simplify the escaped pattern if, for example, it is known
+	 *        that the regular expression contains a lot of slashes.
+	 * @param string|\Jitsu\XString|null $start Optional ending delimiter.
+	 *        Only necessary for bracket pairs.
 	 */
 	public function __construct($arg, $flags = '', $start = null, $end = null) {
 		$this->pattern = (
