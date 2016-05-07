@@ -35,33 +35,33 @@ class XArray implements \Countable, \IteratorAggregate, \ArrayAccess {
 		return implode(', ', $this->value);
 	}
 
-	// interface Countable
+	// Countable
 	public function count() {
 		return count($this->value);
 	}
 
-	// interface IteratorAggregate
+	// IteratorAggregate
 	public function getIterator() {
 		return new ArrayIterator($this->value);
 	}
 
-	// interface ArrayAccess
+	// ArrayAccess
 	public function offsetExists($offset) {
 		return isset($this->value[$offset]);
 	}
 
-	// interface ArrayAccess
+	// ArrayAccess
 	public function offsetGet($offset) {
 		return $this->value[$offset];
 	}
 
-	// interface ArrayAccess
+	// ArrayAccess
 	public function offsetSet($offset, $value) {
 		if($offset === null) $this->value[] = $value;
 		else $this->value[$offset] = $value;
 	}
 
-	// interface ArrayAccess
+	// ArrayAccess
 	public function offsetUnset($offset) {
 		unset($this->value[$offset]);
 	}
