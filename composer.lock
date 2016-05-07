@@ -4,20 +4,21 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "3b6d25cba4e79760b8c5b0fd22091e64",
+    "hash": "c3fdf605f05e3768d610dbb99770ef23",
+    "content-hash": "5dfe0c40cc78b4327b2b5c9627269c37",
     "packages": [
         {
             "name": "jitsu/array",
-            "version": "0.1.0",
+            "version": "0.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bdusell/jitsu-array.git",
-                "reference": "864ce9b83b3222c297b2f1c6fc8c87b5093ef7a2"
+                "reference": "1e86a19bbd79482d1a58862f8716e062fd724afe"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bdusell/jitsu-array/zipball/864ce9b83b3222c297b2f1c6fc8c87b5093ef7a2",
-                "reference": "864ce9b83b3222c297b2f1c6fc8c87b5093ef7a2",
+                "url": "https://api.github.com/repos/bdusell/jitsu-array/zipball/1e86a19bbd79482d1a58862f8716e062fd724afe",
+                "reference": "1e86a19bbd79482d1a58862f8716e062fd724afe",
                 "shasum": ""
             },
             "require": {
@@ -48,20 +49,20 @@
                 "array",
                 "utility"
             ],
-            "time": "2015-09-19 00:28:51"
+            "time": "2016-05-07 07:25:40"
         },
         {
             "name": "jitsu/regex",
-            "version": "0.1.0",
+            "version": "0.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bdusell/jitsu-regex.git",
-                "reference": "2b3a2678e7664359999b1ef5197401d559bc516b"
+                "reference": "3cde8cae8e16c5526b6c7d3f00b25fbbd0946553"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bdusell/jitsu-regex/zipball/2b3a2678e7664359999b1ef5197401d559bc516b",
-                "reference": "2b3a2678e7664359999b1ef5197401d559bc516b",
+                "url": "https://api.github.com/repos/bdusell/jitsu-regex/zipball/3cde8cae8e16c5526b6c7d3f00b25fbbd0946553",
+                "reference": "3cde8cae8e16c5526b6c7d3f00b25fbbd0946553",
                 "shasum": ""
             },
             "require": {
@@ -89,20 +90,20 @@
                 "preg",
                 "regex"
             ],
-            "time": "2015-09-19 02:03:46"
+            "time": "2016-05-07 07:47:09"
         },
         {
             "name": "jitsu/string",
-            "version": "0.1.0",
+            "version": "0.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bdusell/jitsu-string.git",
-                "reference": "e5bb2aa3dd22e8248dbccc5df0f3708e532a4e11"
+                "reference": "db76c48d9dab5c3d5fe2c8a7cea491ad59dd7cc8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bdusell/jitsu-string/zipball/e5bb2aa3dd22e8248dbccc5df0f3708e532a4e11",
-                "reference": "e5bb2aa3dd22e8248dbccc5df0f3708e532a4e11",
+                "url": "https://api.github.com/repos/bdusell/jitsu-string/zipball/db76c48d9dab5c3d5fe2c8a7cea491ad59dd7cc8",
+                "reference": "db76c48d9dab5c3d5fe2c8a7cea491ad59dd7cc8",
                 "shasum": ""
             },
             "require": {
@@ -133,51 +134,7 @@
                 "string",
                 "utility"
             ],
-            "time": "2015-09-18 07:27:49"
-        },
-        {
-            "name": "jitsu/util",
-            "version": "0.1.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/bdusell/jitsu-util.git",
-                "reference": "45558dc120e185f45a160298cd47781dbe90150a"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/bdusell/jitsu-util/zipball/45558dc120e185f45a160298cd47781dbe90150a",
-                "reference": "45558dc120e185f45a160298cd47781dbe90150a",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.4.0"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Jitsu\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Brian DuSell",
-                    "email": "bdusell@gmail.com",
-                    "role": "Developer"
-                }
-            ],
-            "description": "General-purpose utilities for PHP",
-            "keywords": [
-                "introspection",
-                "lazy",
-                "reflection",
-                "singleton",
-                "utility"
-            ],
-            "time": "2015-09-19 01:40:08"
+            "time": "2016-05-07 07:55:56"
         }
     ],
     "packages-dev": [],
